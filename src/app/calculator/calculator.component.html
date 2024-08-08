@@ -1,0 +1,24 @@
+<div class="calculator">
+  <div class="display">{{ currentNumber$ | async }}</div>
+  <div class="buttons">
+    <button (click)="addNumber('1')">1</button>
+    <button (click)="addNumber('2')">2</button>
+    <button (click)="addNumber('3')">3</button>
+    <button (click)="add()">+</button>
+
+    <button (click)="addNumber('4')">4</button>
+    <button (click)="addNumber('5')">5</button>
+    <button (click)="addNumber('6')">6</button>
+    <button (click)="subtract()">-</button>
+
+    <button (click)="addNumber('7')">7</button>
+    <button (click)="addNumber('8')">8</button>
+    <button (click)="addNumber('9')">9</button>
+    <button (click)="multiply()">*</button>
+
+    <button (click)="addNumber('0')">0</button>
+    <button (click)="clear()">C</button>
+    <button (click)="calculate()">=</button>
+    <button (click)="divide()">/</button>
+  </div>
+</div>
